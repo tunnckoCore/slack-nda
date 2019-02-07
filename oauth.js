@@ -2,7 +2,8 @@
 
 // from: https://github.com/zeit/now-examples/blob/master/slack-eval/oauth.js
 
-const proc = require('process');
+// TODO: use `slack` module
+
 const fetch = require('axios');
 const { parse } = require('querystring');
 
@@ -12,8 +13,8 @@ module.exports = async (req, res) => {
   const { code } = parse(urlQueryString);
 
   // Compose authHeader by encoding the string ${client_id}:${client_secret}
-  const clientId = proc.env.SLACK_CLIENT_ID;
-  const clientSecret = proc.env.SLACK_CLIENT_SECRET;
+  const clientId = process.env.SLACK_CLIENT_ID;
+  const clientSecret = process.env.SLACK_CLIENT_SECRET;
   const Authorization = `Basic ${Buffer.from(
     `${clientId}:${clientSecret}`,
   ).toString('base64')}`;
