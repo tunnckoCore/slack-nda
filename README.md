@@ -1,2 +1,2 @@
 # slack-nda
-Slash Command `/nda &lt;name>` for Slack
+Slash Command `/nda <name>` for Slack
