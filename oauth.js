@@ -1,5 +1,7 @@
 'use strict';
 
+// from: https://github.com/zeit/now-examples/blob/master/slack-eval/oauth.js
+
 const proc = require('process');
 const fetch = require('axios');
 const { parse } = require('querystring');
