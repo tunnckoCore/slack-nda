@@ -1,0 +1,16 @@
+{
+  "name": "slack-zeit-nda",
+  "alias": "slack-zeit-nda.now.sh",
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.js",
+      "use": "@now/node"
+    }
+  ],
+  "env": {
+    "SLACK_ACCESS_TOKEN": "@tunnckocorehq-slack-nda-token",
+    "SLACK_CLIENT_ID": "@tunnckocorehq-slack-nda-client-id",
+    "SLACK_CLIENT_SECRET": "@tunnckocorehq-slack-nda-client-secret"
+  }
+}
